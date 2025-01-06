@@ -1,5 +1,4 @@
 function displayAffirmations(response) {
-  console.log("Affirmations generated");
   new Typewriter("#affirmation", {
     strings: response.data.answer,
     autoStart: true,
@@ -24,10 +23,6 @@ function generateAffirmations(event) {
   let affirmationElement = document.querySelector("#affirmation");
   affirmationElement.classList.remove("hidden");
   affirmationElement.innerHTML = `⏳ Generating a list of affirmations on your ${wordInput.value} emotion`;
-
-  console.log("Generating affirmations");
-  console.log(`Prompt: ${prompt}`);
-  console.log(`Context: ${context}`);
 }
 
 let affirmationFormElement = document.querySelector(
