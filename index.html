@@ -4,47 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
     <title>AI Daily Affirmation Generator</title>
   </head>
   <body>
-    <header>
-      <h1>
-        Solace
-        <br />
-        <span>AI Daily Affirmation Generator</span>
-      </h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>
+          solace
+          <span> 🕊️ AI Daily Affirmation Generator</span>
+        </h1>
+      </header>
 
-    <main>
-      <form action="">
-        <input
-          type="text"
-          placeholder="Enter one word to explain how you are feeling?"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
+      <main>
+        <form action="">
+          <input
+            type="text"
+            placeholder="Enter one word to explain how you are feeling?"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="button" />
+        </form>
 
-      <div>
-        The affirmation will be here
-        <br />
-        The affirmation will be here
-      </div>
-    </main>
+        <div class="affirmations">
+          The affirmation will be here
+          <br />
+          The affirmation will be here
+        </div>
+      </main>
 
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/Vicko657">Victoria Olusegun</a> and
-      <a href="https://github.com/Vicko657/daily-affirmations-generator">
-        is open-sourced on github</a
-      >
-      and
-      <a href="https://daily-affirmations-ai-generator.netlify.app/"
-        >is hosted on Netlify</a
-      >
-    </footer>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/Vicko657">Victoria Olusegun</a> and
+        <a href="https://github.com/Vicko657/daily-affirmations-generator">
+          is open-sourced on github</a
+        >
+        and
+        <a href="https://daily-affirmations-ai-generator.netlify.app/"
+          >is hosted on Netlify</a
+        >
+      </footer>
+    </div>
     <script src="js/script.js"></script>
   </body>
 </html>
