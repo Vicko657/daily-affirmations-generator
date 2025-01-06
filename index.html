@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Daily Affirmation Generator</title>
   </head>
   <body>
@@ -22,7 +24,7 @@
       </header>
 
       <main>
-        <form action="">
+        <form id="affirmation-generator-form" action="">
           <input
             type="text"
             placeholder="Enter one word to explain how you are feeling?"
@@ -34,11 +36,7 @@
           <input type="submit" class="button" />
         </form>
 
-        <div class="affirmations">
-          The affirmation will be here
-          <br />
-          The affirmation will be here
-        </div>
+        <div class="affirmations" id="affirmation"></div>
       </main>
 
       <footer>
