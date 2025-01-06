@@ -24,20 +24,23 @@
       </header>
 
       <main>
-        <form id="affirmation-generator-form" action="">
-          <input
-            type="text"
-            placeholder="Enter one word to explain how you are feeling?"
-            autofocus
-            required
-            autocomplete="off"
-            class="instructions"
-            id="users-word"
-          />
-          <input type="submit" class="button" />
-        </form>
+        <div class="form-container">
+          <form id="affirmation-generator-form" action="">
+            <input
+              type="text"
+              placeholder="How are you feeling?"
+              autofocus
+              required
+              autocomplete="off"
+              class="instructions"
+              id="users-word"
+            />
+            <input type="submit" class="button" />
+          </form>
+          <div class="hint">One word i.e. happy, sad, anxious, lonely</div>
+        </div>
 
-        <div class="affirmations" id="affirmation"></div>
+        <div class="affirmations hidden" id="affirmation"></div>
       </main>
 
       <footer>

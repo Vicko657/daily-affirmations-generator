@@ -41,12 +41,24 @@ header {
 }
 
 form {
-  padding: 30px;
+  display: flex;
+}
+
+.form-container{
+    padding: 30px;
   background-color: #eeefef;
   border-radius: 20px;
-  display: flex;
   margin-bottom: 30px;
 }
+
+.hint{
+    line-height: 1.5;
+    font-size: 12px;
+    margin-top: 5px;
+    opacity: 0.3;
+    padding: 0 10px;
+}
+
 .instructions {
   padding: 10px;
   border: none;
@@ -60,7 +72,7 @@ border-radius: 10px;
 .instructions::placeholder{
   color: black;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 18px;
   font-family: "Manrope", serif;
   font-optical-sizing: auto;
 
@@ -98,7 +110,7 @@ border-radius: 10px;
     #fdf4f0,
     #eeb1c3
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding: 20px;
+    padding: 10px 35px;
     line-height: 24px;
     border-radius: 15px;
 
@@ -106,8 +118,12 @@ border-radius: 10px;
 
 footer{
     text-align: center;
-    font-size: 14px;
+    font-size: 13px;
     margin-top: 30px;
-border-bottom: 1px solid #e0e3e4;
+    border-bottom: 1px solid #e0e3e4;
     padding: 10px;
+}
+
+.hidden{
+    display: none;
 }

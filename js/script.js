@@ -21,6 +21,11 @@ function generateAffirmations(event) {
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios.get(apiUrl).then(displayAffirmations);
+
+  let affirmationElement = document.querySelector("#affirmation");
+  affirmationElement.classList.remove("hidden");
+  affirmationElement.innerHTML = `⏳ Generating a list of affirmations on your ${wordInput.value} emotion`;
+
   console.log("Generating affirmations");
   console.log(`Prompt: ${prompt}`);
   console.log(`Context: ${context}`);
