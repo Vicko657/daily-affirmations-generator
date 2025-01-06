@@ -10,7 +10,6 @@ function displayAffirmations(response) {
 
 function generateAffirmations(event) {
   event.preventDefault();
-  alert("Generating affirmations");
 
   let wordInput = document.querySelector("#users-word");
 
