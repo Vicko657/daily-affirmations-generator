@@ -18,6 +18,14 @@ h1 {
   margin: 0;
 }
 p {
+  font-family: "Manrope", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 16px;
+  margin: 20px;
+}
+
+p.secondary_text {
   text-align: center;
   border: 1px solid #e0e3e4;
   border-radius: 30px;
